@@ -38,13 +38,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 200px;
     padding: 30px 0;
 }
 
 .big-box {
     background-color: #EE82EE;
-    width: 60%;
-    height: 300px;
+    width: 45%;
+    max-width: 600px;
+    height: 200px;
 }
 
 /* Sezione con due colonne */
@@ -57,7 +59,7 @@
 
 .section .box {
     height: 200px;
-    max-width: 300px;
+    max-width: 600px;
 }
 
 .section .left {
@@ -72,6 +74,7 @@
 
 .section.reversed{
     background-color: #D3D3D3;
+    /* max-width: 600px;     */
 }
 
 .section.reversed .left {
@@ -95,7 +98,12 @@
 
 .green-box {
     background-color: #228b22;
-    width: 65%;
-    height: 350px;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
 }
 
+
+.final-section{
+    
+}
