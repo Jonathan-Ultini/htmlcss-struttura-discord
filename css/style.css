@@ -28,3 +28,18 @@
     text-decoration: none;
     color: black;
 }
+
+/* Sezione principale */
+.main {
+    background-color: #000080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.big-box {
+    background-color: #EE82EE;
+    width: 60%;
+    height: 300px;
+}
