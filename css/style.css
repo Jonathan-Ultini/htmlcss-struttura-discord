@@ -7,22 +7,25 @@
 /* Header */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     background-color: #b0e0e6;
 }
 
-.logo, .login {
-    flex: 1;
+/* Stili specifici per logo, nav e login */
+.header .logo, .header .nav, .header .login {
+    border: 2px solid black;
+    padding: 5px;
+    box-sizing: border-box; 
 }
 
-.nav {
-    display: flex;
-    gap: 10px;
-    flex: 2;
-    justify-content: center;
+
+.header .nav a {
+    text-decoration: none;
+    color: black;
 }
+
 
 .nav a {
     text-decoration: none;
@@ -95,3 +98,4 @@
     width: 65%;
     height: 350px;
 }
+
