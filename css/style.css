@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #b0e0e6;
+}
+
+.logo, .login {
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    flex: 2;
+    justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
