@@ -43,3 +43,26 @@
     width: 60%;
     height: 300px;
 }
+
+/* Sezione con due colonne */
+.section {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .box {
+    height: 200px;
+    max-width: 300px;
+}
+
+.section .left {
+    background-color: #1E90FF;
+    width: 60%;
+}
+
+.section .right {
+    width: 40%;
+    background-color: #FFC0CB;
+}
