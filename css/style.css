@@ -1,109 +1,168 @@
-*{
+/* Reset */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Custom properties */
+:root {
+    --space: 15px;
+    --bordo: border: 2px solid black;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+/* Container centrato */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: var(--space); */
+}
+
+/* Flex Utilities */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* Header */
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #b0e0e6;
-}
-
-/* Stili specifici per logo, nav e login */
-.header .logo, .header .nav, .header .login {
-    border: 2px solid black;
-    padding: 5px;
-    box-sizing: border-box; 
-}
-
-
-.header .nav a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.nav a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Sezione principale */
-.main {
-    background-color: #000080;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    padding: 30px 0;
-}
-
-.big-box {
-    background-color: #EE82EE;
-    width: 45%;
-    max-width: 600px;
-    height: 200px;
-}
-
-/* Sezione con due colonne */
-.section {
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.section .box {
-    height: 200px;
-    max-width: 600px;
-}
-
-.section .left {
-    background-color: #1E90FF;
-    width: 40%;
-}
-
-.section .right {
-    width: 25%;
-    background-color: #FFC0CB;
-}
-
-.section.reversed{
-    background-color: #D3D3D3;
-    /* max-width: 600px;     */
-}
-
-.section.reversed .left {
-    background-color: #FFC0CB;
-    width: 40%;
-}
-
-.section.reversed .right {
-    background-color: #1E90FF;
-    width: 25%;
-}
-
-/* Sezione con blocco grande */
-.section.green {
-    background-color: #D3D3D3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.green-box {
-    background-color: #228b22;
+.header-wrapper {
+    background-color: #ADD8E6;
     width: 100%;
-    max-width: 600px;
+    padding: 15px 0; 
+}
+
+.header {
+    padding: 15px 0; 
+    height: 50px;
+}
+
+.nav-links {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header .logo, .header .nav-links, .header .login {
+    /* padding: 10px;  */
+    background-color: #DAA520;
+    border: 2px solid black;
+}
+
+/* Sections */
+section {
+    padding: var(--space);
+    /* margin-bottom: var(--space); */
+}
+
+/* Wrapper di sezione per estendere il background */
+.section-1-wrapper {
+    background-color: darkblue;
+}
+
+.section-2-wrapper {
+    background-color: white;
+}
+
+.section-3-wrapper {
+    background-color: lightgray;
+}
+
+.section-4-wrapper {
+    background-color: #23272A;
+}
+
+.section-5-wrapper {
+    background-color: #D3D3D3;
+}
+
+/* Sezioni interne */
+.section-1, .section-2, .section-3, .section-4, .section-5 {
+    /* padding: var(--space); */
+    border: 2px solid black;
     height: 400px;
 }
 
 
-.final-section{
+
+
+/* Footer */
+.footer-wrapper {
+    background-color: #23272A;
+}
+
+.footer {
+    height: 100px;
+    color: white;
     
+}
+
+.footer-logo, .footer-links {
+    flex: 1;
+    padding: var(--space);
+}
+
+
+
+
+/* Blocks */
+.block {
+    /* flex: 1; */
+    /* padding: var(--space); */
+    border: 2px solid black;
+}
+
+
+.section-2 .block-1 {
+    background-color: lightblue;
+    height: 350px;
+    width: 60%;
+}
+
+.section-2 .block-2 {
+    background-color: lightpink;
+    height: 350px;
+    width: 40%;
+}
+
+.section-3 .block-1 {
+    background-color: lightpink;
+    height: 350px;
+    width: 40%;
+}
+
+.section-3 .block-2 {
+    background-color: lightblue;
+    height: 350px;
+    width: 60%;
+}
+
+.section-4 .block-1 {
+    background-color: #F08080;
+    height: 350px;
+    width: 30%;
+}
+
+.section-4 .block-2 {
+    background-color: #20B2AA;
+    height: 350px;
+    width: 17.5%;
+
+}
+
+.section-5 .block-1 {
+    background-color: #228B22; 
+    height: 350px;
+    width: 100%; 
+}
+
+.section-1 .block-1 {
+    background-color: #EE82EE; 
+    height: 350px; 
+    width: 70%;
 }
